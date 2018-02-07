@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Your Website Title</title>
+</head>
+<body>
+
+  <!-- Load 3D Tours SDK for JavaScript -->
+  <script>
+    ;(function(d, s, id) {
+      var js, tjs = d.getElementsByTagName(s)[0]
+      if (d.getElementById(id)) return
+      js = d.createElement(s)
+      js.id = id
+      js.src = "//cdn.get3dtours.com/sdk.js"
+      tjs.parentNode.insertBefore(js, tjs)
+    }(document, 'script', 'sdk'))
+  </script>
+
+  <!-- Your 3D tour button code -->
+  <div id=tour-root data-user=xyz></div>
+  <div id="tdt-tour-address" data-address="3000 Alberta Dr, Marietta, GA, United States"></div>
+
+</body>
+</html>
